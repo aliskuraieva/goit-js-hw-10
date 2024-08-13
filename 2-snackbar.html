@@ -13,12 +13,42 @@
     
     
     <title>Snackbar</title>
-    <link rel="stylesheet" href="/goit-js-hw-10/assets/1-timer-f9a39649.css">
-    <link rel="stylesheet" href="/goit-js-hw-10/assets/reset-992e95a2.css">
+    <script type="module" crossorigin src="/goit-js-hw-10/commonHelpers2.js"></script>
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-10/assets/modulepreload-polyfill-3cfb730f.js">
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-10/assets/vendor-77e16229.js">
+    <link rel="stylesheet" href="/goit-js-hw-10/assets/vendor-7a007824.css">
+    <link rel="stylesheet" href="/goit-js-hw-10/assets/2-snackbar-da84be2c.css">
+    <link rel="stylesheet" href="/goit-js-hw-10/assets/reset-69b24c0d.css">
   </head>
   <body>
     <section>
       <a href="./index.html">Go to home</a>
     </section>
+    <form class="form">
+      <label class="label-delay"
+        >Delay (ms)<input
+          class="data-input"
+          type="number"
+          name="delay"
+          required
+        />
+      </label>
+
+      <fieldset class="frame">
+        <legend class="legend">State</legend>
+        <label class="label-radio">
+          <input type="radio" name="state" value="fulfilled" required />
+          Fulfilled
+        </label>
+        <label class="label-radio">
+          <input type="radio" name="state" value="rejected" required />
+          Rejected
+        </label>
+      </fieldset>
+
+      <button class="btn-start" type="submit">Create notification</button>
+    </form>
+
+    
   </body>
 </html>
