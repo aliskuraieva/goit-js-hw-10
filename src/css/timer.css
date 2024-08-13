@@ -68,10 +68,10 @@ button {
   background-color: #cfcfcf;
 }
 
-button:focus {
+/* button:focus {
   background-color: #4e75ff;
   color: #ffffff;
-}
+} */
 
 .field {
   display: flex;
