@@ -24,7 +24,7 @@ const options = {
     if (selectedDates[0] <= new Date()) {
       return iziToast.error({
         position: 'topRight',
-
+        title: 'Error',
         message: 'Please choose a date in the future',
       });
     }
